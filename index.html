@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ha ha</title>
+</head>
+<body>
+    <section>
+        <div class="image">
+            <img src="./default.jpg" alt="" id="image-box" onerror="handleDefault">
+        </div>
+        <div class="joke">
+            <p id="setup"></p>
+            <p id="punch"></p>
+        </div>
+        <button class="refresh">
+            <span id="btn-img">
+                <img src="./oh_yeah boy.png" alt="">
+            </span>
+            <span >next joke</span>
+        </button>
+        <div class="num">0</div>
+    </section>
+    <script src="./script.js">
+        function handleDefault(){
+            this.src="./default.jpg"
+        }
+    </script>
+</body>
+</html>
